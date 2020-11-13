@@ -132,12 +132,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\FilmModel.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\filmDb.mdf" />
     <Content Include="App_Data\filmDb_log.ldf">
       <DependentUpon>filmDb.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\userDb.mdf" />
+    <Content Include="App_Data\userDb_log.ldf">
+      <DependentUpon>userDb.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -177,6 +182,8 @@
     <Content Include="Views\Film\Index.cshtml" />
     <Content Include="Views\Film\Create.cshtml" />
     <Content Include="Views\Film\Edit.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
