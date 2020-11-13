@@ -34,7 +34,7 @@ namespace quiz2_webpro.Models
         public string ConfirmPassword { get; set; }
         public string FullName()
         {
-            return this.FirstName + " " + this.LastName;
+            return this.Display_Name;
         }
     }
 }
