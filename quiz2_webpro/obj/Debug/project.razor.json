@@ -1,0 +1,19 @@
+{
+  "FilePath": "d:\\Informatics\\Semester5\\Pemrograman Web\\Tugas\\Quiz2\\quiz2\\quiz2-pweb\\quiz2_webpro\\quiz2_webpro.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
