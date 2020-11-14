@@ -114,23 +114,16 @@ namespace quiz2_webpro.Controllers
         // GET: Film/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: Film/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
+            using (db)
             {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
+                db.Open();
+                string query = "DELETE FROM films Where id_film = @id_film";
+                SqlCommand sqlCommand = new SqlCommand(query, db);
+                sqlCommand.Parameters.AddWithValue("@id_film", id);
+                sqlCommand.ExecuteNonQuery();
             }
-            catch
-            {
-                return View();
-            }
+            //return View("Index");
+            return RedirectToAction("Index");
         }
     }
 }
